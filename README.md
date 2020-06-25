@@ -1,3 +1,21 @@
+Form requirements
+Should accept user input for username and password
+should have a submit button
+should have a reset button
+when submit button is clicked it should send username and password to authentication function.
+authentication function should check that username and password are provided.
+authentication function should return exception 'username and password required' if either is missing.
+authentication function should check if check if username is valid if username and password are provided.
+authentication function should keep count of login attempts if username and password are provided and username is valid.
+if user name and password provided are valid, authentication function should return true.
+authentication function should return  exception 'invalid credentials provided' if username or password is invalid.
+authentication function should lock username account if count of login attempts is more than 3.
+authentication function should return exception 'account locked. contact customer service' if the account is locked. 
+if authentication function returns true, navigate to a new page with tabbed 'panels'.
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
